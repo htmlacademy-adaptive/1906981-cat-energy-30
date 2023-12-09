@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -110,8 +114,17 @@
 
       <div class="case__slider compare-slider">
         <div class="compare-slider__images">
-          <img class="compare-slider__image compare-slider__image--before" src="" alt="Толстый кот до похудения.">
-          <img class="compare-slider__image compare-slider__image--after" src="" alt="Нормальный кот после похудения.">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+            <img class="compare-slider__image compare-slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до похудения.">
+          </picture>
+
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+            <img class="compare-slider__image compare-slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Нормальный кот после похудения.">
+          </picture>
         </div>
 
         <button class="compare-slider__button" type="button">
@@ -131,7 +144,11 @@
     </div>
 
     <a class="main-footer__map" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&z=16.7">
-      <img class="main-footer__image" src="" alt="Карта с адресом: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
+      <picture>
+        <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1px, images/map-desktop@2px.png 2px">
+        <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1px, images/map-tablet@2px.png 2px">
+        <img class="main-footer__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2px" width="320" height="362" alt="Карта с адресом: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
+      </picture>
     </a>
 
     <a class="main-footer__logo" href="#" aria-current="page">
