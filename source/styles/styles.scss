@@ -1,7 +1,24 @@
 /* GLOBAL */
 @import "./global/variables.scss";
+@import "./global/mixins.scss";
 @import "./global/global.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/instruction.scss";
+@import "./blocks/case.scss";
+@import "./blocks/compare-slider.scss";
+@import "./blocks/main-footer.scss";
+@import "./blocks/address.scss";
+@import "./blocks/socials.scss";
+@import "./blocks/html-academy.scss";

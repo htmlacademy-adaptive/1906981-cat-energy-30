@@ -1,0 +1,21 @@
+@import "../global/variables.scss";
+
+.button {
+  color: $basic-white;
+
+  font-family: inherit;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: none;
+
+  &--primary {
+    background-color: $basic-green;
+  }
+
+  &--secondary {
+    background-color: $basic-grey;
+  }
+}

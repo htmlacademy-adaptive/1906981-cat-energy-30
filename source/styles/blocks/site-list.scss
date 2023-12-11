@@ -1,0 +1,12 @@
+@import "../global/variables.scss";
+
+.site-list {
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.site-list__link {
+  color: $basic-black;
+  text-decoration: none;
+}
