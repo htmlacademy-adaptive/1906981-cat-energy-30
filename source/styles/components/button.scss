@@ -1,0 +1,20 @@
+.button {
+  color: $basic-white;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: none;
+
+  &--primary {
+    background-color: $basic-green;
+  }
+
+  &--secondary {
+    background-color: $basic-grey;
+  }
+}

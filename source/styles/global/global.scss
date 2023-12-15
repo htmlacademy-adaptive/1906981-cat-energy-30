@@ -1,1 +1,11 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+::selection {
+  background-color: $basic-black;
+  color: $basic-white;
+}
