@@ -1,11 +1,9 @@
 .main-header {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 
   position: relative;
 
-  padding: 17px 0 20px;
+  padding: 32px 0;
 
   background-image: url("../../images/logo-text.svg");
   background-repeat: no-repeat;
@@ -13,8 +11,11 @@
   background-position: top 23px center;
 }
 
-.main-header__logo-image {
+.main-header__logo {
+  display: block;
+
   position: absolute;
   left: 0;
   top: 13px;
 }
+
