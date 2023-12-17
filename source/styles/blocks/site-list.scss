@@ -1,6 +1,6 @@
-@import "./global/variables.scss";
-
 .site-list {
+  @include list-style;
+
   font-size: 20px;
   line-height: 100%;
   text-transform: uppercase;

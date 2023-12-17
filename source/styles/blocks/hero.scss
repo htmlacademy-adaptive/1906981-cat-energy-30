@@ -1,13 +1,60 @@
+.hero {
+  min-height: 480px;
+
+  text-align: center;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    background-image: url("../../images/index-can-mobile@2x.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    left: 20px;
+    bottom: 43px;
+
+    width: 280px;
+    height: 270px;
+  }
+}
+
+.hero__container {
+  padding: 28px 0 0;
+  margin-bottom: 138px;
+
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-phone@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  min-height: 275px;
+}
+
 .hero__title {
   color: $basic-white;
 
   line-height: 36px;
-  text-align: center;
+
+  margin: 0 auto 25px;
+
+  max-width: 250px;
 }
 
 .hero__text {
   color: $basic-white;
 
-  text-transform: uppercase;
   line-height: 14px;
+  text-transform: uppercase;
+
+  margin: 0 auto;
+
+  max-width: 250px;
+}
+
+.hero__button {
+  width: calc(100% - 40px);
+
+  padding: 10px 0;
 }

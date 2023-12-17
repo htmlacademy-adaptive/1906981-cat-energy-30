@@ -14,19 +14,21 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
+  <header class="main-header container">
     <a class="main-header__logo" href="#" aria-current="page">
       <picture>
-        <img class="main-header__logo-image" src="" alt="Логотип Кэт Энерджи.">
+        <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
+        <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
       </picture>
     </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle" type="button"> <!-- Когда меню открыто - класс main-nav__toggle--opened -->
         <span class="visually-hidden">Открыть меню.</span>
       </button>
 
-      <ul class="main-nav__list site-list">
+      <ul class="main-nav__list site-list"> <!-- Когда меню открыто - класс main-nav__list--opened -->
         <li class="site-list__item">
           <a class="site-list__link site-list__link--current" href="#" aria-current="page">Главная</a>
         </li>
@@ -46,8 +48,11 @@
     <h1 class="visually-hidden">Интернет-магазин питания для котов.</h1>
 
     <section class="hero">
-      <h2 class="hero__title section-title">Функциональное питание для котов</h2>
-      <p class="hero__text">Занялся собой? Займись котом!</p>
+      <div class="hero__container">
+        <h2 class="hero__title section-title">Функциональное питание для котов</h2>
+        <p class="hero__text">Занялся собой? Займись котом!</p>
+      </div>
+
       <a class="hero__button button button--primary" href="form.html">Подобрать программу</a>
     </section>
 
@@ -58,14 +63,12 @@
         <li class="programs__item">
           <h3 class="programs__title">Похудение</h3>
           <p class="programs__description regular-text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <img class="programs__image" src="" alt="Нарисованный худой кот.">
           <a class="programs__link" href="catalog.html">Каталог slim</a>
         </li>
 
         <li class="programs__item">
           <h3 class="programs__title">Набор массы</h3>
           <p class="programs__description regular-text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <img class="programs__image" src="" alt="Нарисованный тигр.">
           <a class="programs__link" href="catalog.html">Каталог pro</a>
         </li>
       </ul>
@@ -154,10 +157,12 @@
 
     <div class="map">
       <div class="map__image">
-        <img class="map__offer" src="images/map@1x.png" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+        <picture>
+          <img src="images/map@1x.png" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+        </picture>
       </div>
       <div class="map__google">
-        <iframe title="Ссылка на Google карту с местоположением офиса." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477064794!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1702570108647!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="" title="Ссылка на Google карту с местоположением офиса." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477064794!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1702570108647!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 
