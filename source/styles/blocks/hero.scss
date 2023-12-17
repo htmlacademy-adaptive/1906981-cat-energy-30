@@ -13,8 +13,8 @@
     background-repeat: no-repeat;
     background-size: 100%;
 
-    left: 20px;
-    bottom: 43px;
+    left: calc(50% - 140px);
+    bottom: 63px;
 
     width: 280px;
     height: 270px;
@@ -28,6 +28,7 @@
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-phone@2x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 
   min-height: 275px;
 }
@@ -57,4 +58,5 @@
   width: calc(100% - 40px);
 
   padding: 10px 0;
+  margin-bottom: 20px;
 }
