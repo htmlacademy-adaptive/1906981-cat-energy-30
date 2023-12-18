@@ -96,7 +96,7 @@
       </ul>
     </section>
 
-    <section class="case container">
+    <section class="case">
       <h2 class="case__title section-title">Живой пример</h2>
 
       <p class="case__description regular-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
@@ -116,7 +116,7 @@
       <p class="case__price">Затраты на питание:<span class="case__price-amount">15 000 руб.</span></p>
 
       <div class="case__slider compare-slider">
-        <div class="compare-slider__images">
+        <!-- <div class="compare-slider__images">
           <picture>
             <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
             <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
@@ -132,68 +132,64 @@
 
         <button class="compare-slider__button" type="button">
           <span class="visually-hidden">Поменять изображение.</span>
-        </button>
+        </button> -->
       </div>
     </section>
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__contacts container">
-      <p class="main-footer__text">Приглашаем к сотрудничеству дилеров!</p>
+      <p class="main-footer__text">Приглашаем <br>к сотрудничеству дилеров!</p>
       <address class="main-footer__address address">
         <p class="address-text regular-text">ул. Большая Конюшенная, д. 19/8</p>
         <p class="address-text regular-text">Санкт-Петербург</p>
       </address>
     </div>
 
-    <a class="main-footer__map" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&z=16.7">
-      <picture>
-        <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
-        <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
-        <img class="main-footer__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с адресом: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
-      </picture>
-    </a>
-
-
-    <div class="map">
+    <a class="main-footer__map map" href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSUYAQFtjfXVyeXpgZQ==/?ll=30.323036%2C59.938631&z=16.7">
       <div class="map__image">
         <picture>
-          <img src="images/map@1x.png" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source type="image/png" media="(min-width: 768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img class="main-footer__image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Карта с адресом: город Санкт-Петербург, улица Большая Конюшенная, дом 19/8.">
         </picture>
       </div>
+
       <div class="map__google">
-        <iframe class="" title="Ссылка на Google карту с местоположением офиса." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477064794!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1702570108647!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map__google-link" title="Ссылка на Google карту с местоположением офиса." src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728603!2d30.320472477064794!3d59.93871647491512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1702570108647!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
+    </a>
+
+    <div class="main-footer__info">
+      <a class="main-footer__logo" href="#" aria-current="page">
+        <img class="main-footer__logo-text" src="images/logo-text.svg" width="128" height="24" alt="Логотип Кэт Энерджи.">
+      </a>
+
+      <ul class="main-footer__list socials">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
+            <img class="socials__image" src="" alt="ВКонтакте.">
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <img class="socials__image" src="" alt="YouTube.">
+          </a>
+        </li>
+
+        <li class="socials__item">
+          <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
+            <img class="socials__image" src="" alt="Телеграм.">
+          </a>
+        </li>
+      </ul>
+
+      <a class="html-academy" href="https://htmlacademy.ru/">
+        <span class="html-academy__text regular-text">HTML Academy</span>
+        <img class="html-academy__logo" src="" alt="Логотип HTML Academy.">
+      </a>
     </div>
-
-    <a class="main-footer__logo" href="#" aria-current="page">
-      <img class="main-footer__logo-text" src="" alt="Логотип Кэт Энерджи.">
-    </a>
-
-    <ul class="main-footer__list socials">
-      <li class="socials__item">
-        <a class="socials__link socials__link--vk" href="https://vk.com/htmlacademy">
-          <img class="socials__image" src="" alt="ВКонтакте.">
-        </a>
-      </li>
-
-      <li class="socials__item">
-        <a class="socials__link socials__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <img class="socials__image" src="" alt="YouTube.">
-        </a>
-      </li>
-
-      <li class="socials__item">
-        <a class="socials__link socials__link--telegram" href="https://t.me/htmlacademy">
-          <img class="socials__image" src="" alt="Телеграм.">
-        </a>
-      </li>
-    </ul>
-
-    <a class="html-academy" href="https://htmlacademy.ru/">
-      <span class="html-academy__text regular-text">HTML Academy</span>
-      <img class="html-academy__logo" src="" alt="Логотип HTML Academy.">
-    </a>
   </footer>
 </body>
 

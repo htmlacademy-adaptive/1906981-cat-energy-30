@@ -1,3 +1,40 @@
+.case {
+  background-color: #eaeaea;
+
+  padding: 25px 20px 38px;
+}
+
+.case__title {
+  margin-bottom: 40px;
+}
+
+.case__description {
+  margin: 0 0 20px;
+}
+
+.case__list {
+  @include list-style;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+
+  margin-bottom: 34px;
+}
+
+.case__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+
+  padding: 14px 20px 17px;
+
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+
+  position: relative;
+}
+
 .case__text {
   color: $special-dark-grey;
 
@@ -5,6 +42,13 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+
+  background-color: $basic-grey;
+
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .case__number {
@@ -12,10 +56,21 @@
   line-height: 24px;
   text-align: center;
   text-transform: uppercase;
+
+  margin: 0;
 }
 
 .case__price {
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  letter-spacing: 0.2px;
+
+  margin: 0 0 20px;
+}
+
+.case__slider {
+  width: 280px;
+  height: 256px;
+  border: 1px solid black;
 }
