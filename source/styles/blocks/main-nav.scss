@@ -1,0 +1,30 @@
+.main-nav__toggle {
+  background-image: url("../../images/icons/stack.svg#menu-burger");
+  background-repeat: no-repeat;
+  background-color: transparent;
+
+  position: absolute;
+
+  top: 20px;
+  right: 1px;
+
+  border: none;
+
+  width: 24px;
+  height: 24px;
+
+  &--opened {
+    background-image: url("../../images/icons/stack.svg#menu-burger-cross");
+    background-size: 18px;
+    background-position: center;
+  }
+}
+
+.main-nav__list {
+  display: none;
+  position: absolute;
+
+  z-index: 5;
+
+  background-color: $basic-white;
+}

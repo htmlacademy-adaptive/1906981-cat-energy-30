@@ -3,5 +3,23 @@
 
   font-size: 16px;
   line-height: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.html-academy__link {
   text-decoration: none;
+
+  display: block;
+
+  width: 27px;
+  height: 34px;
+
+  /* Поменять background на mask */
+  background-image: url("../../images/icons/stack.svg#logo-html");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
 }

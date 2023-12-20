@@ -1,5 +1,21 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+.main-header {
+  display: flex;
+
+  position: relative;
+
+  padding: 32px 0;
+
+  background-image: url("../../images/logo-text.svg");
+  background-repeat: no-repeat;
+  background-size: 101px auto;
+  background-position: top 23px center;
 }
+
+.main-header__logo {
+  display: block;
+
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+
