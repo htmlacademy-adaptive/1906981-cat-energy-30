@@ -12,8 +12,12 @@
   position: relative;
 
   display: flex;
+  flex-wrap: wrap;
 
   padding: 2px 0 0 80px;
+  align-items: center;
+
+  min-height: 54px;
 
   &:not(:last-child) {
     margin-bottom: 24px;

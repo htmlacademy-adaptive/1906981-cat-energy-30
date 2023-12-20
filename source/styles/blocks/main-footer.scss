@@ -23,22 +23,20 @@
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 19px;
 
   padding: 40px 20px;
   margin: 0 auto;
 }
 
 .main-footer__logo {
-  margin-bottom: 20px;
-  position: relative;
+  margin: auto;
 }
 
 .main-footer__list {
-  border: 1px solid #d9d9d9;
+  padding: 20px calc((100% - 132px) /2);
 
-  border-right-color: transparent;
-  border-left-color: transparent;
-
-  padding: 20px 0;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 }
