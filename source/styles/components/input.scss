@@ -1,0 +1,26 @@
+.input {
+  padding: 14px 15px 13px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: $special-dark-grey;
+
+  border: 1px solid #e7e7e7;
+
+  &:focus-visible {
+    outline: none;
+
+    border-color: $special-dark-grey;
+
+    box-shadow: 0 0 0 1px $special-dark-grey;
+  }
+
+  &--error {
+    border-color: $status-error;
+
+    box-shadow: 0 0 0 1px $status-error;
+  }
+}
