@@ -1,0 +1,1 @@
+var l=document.querySelector(".compare-slider__toggle"),e=document.querySelector(".compare-slider"),r=!1;l.addEventListener("click",()=>{r?(e.classList.toggle("compare-slider--after"),e.classList.toggle("compare-slider--before")):(r=!0,e.classList.add("compare-slider--after"))});
