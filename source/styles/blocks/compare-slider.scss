@@ -1,1 +1,100 @@
+.compare-slider {
+  width: 280px;
+  height: 256px;
 
+  position: relative;
+}
+
+.compare-slider__list {
+  @include list-style;
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+}
+
+.compare-slider__screen {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: #eaeaea;
+
+  overflow: hidden;
+
+  transition: width 1s;
+
+  &--before {
+    z-index: 5;
+
+    width: 50%;
+  }
+
+  &--after {
+    z-index: 1;
+  }
+}
+
+.compare-slider--before .compare-slider__screen--before {
+  width: 100%;
+}
+
+.compare-slider--after .compare-slider__screen--before {
+  width: 0;
+}
+
+.compare-slider__image {
+  width: 280px;
+  height: 256px;
+}
+
+.compare-slider__toggle {
+  width: 40px;
+  height: 100%;
+
+  background-image: url("../../images/icons/stack.svg#slider-button");
+  background-color: transparent;
+
+  border: none;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  z-index: 7;
+
+  transition: left 1s;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    height: 100%;
+    width: 4px;
+
+    top: 0;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    z-index: 3;
+
+    background-color: #666666;
+  }
+}
+
+.compare-slider--before .compare-slider__toggle {
+  left: calc(100% - 20px);
+}
+
+.compare-slider--after .compare-slider__toggle {
+  left: 20px;
+}
