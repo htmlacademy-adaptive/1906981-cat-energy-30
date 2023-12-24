@@ -1,0 +1,21 @@
+.radio-group {
+  padding: 19px 0 13px;
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% + 44px);
+    height: 1px;
+    background-color: #d9d9d9;
+
+    bottom: 0;
+    left: -22px;
+  }
+}
+
+.radio-group__item:not(:last-child) {
+  margin-bottom: 4px;
+}

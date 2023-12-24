@@ -1,8 +1,12 @@
 .main-footer__contacts {
-  padding: 26px 0;
+  padding: 26px 20px;
 
   display: flex;
   justify-content: space-between;
+
+  &--grey {
+    background-color: $basic-grey;
+  }
 }
 
 .main-footer__text {

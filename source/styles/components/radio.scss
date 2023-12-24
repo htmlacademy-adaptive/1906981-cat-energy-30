@@ -1,0 +1,49 @@
+.radio {
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.radio__label {
+  font-size: 16px;
+  text-transform: uppercase;
+
+  padding: 9px 0 0 0;
+
+  position: relative;
+
+  min-height: 30px;
+
+  cursor: pointer;
+}
+
+.radio__input {
+  width: 30px;
+  height: 30px;
+
+  margin: 0;
+
+  border-radius: 50%;
+  border: 1px solid $special-grey;
+
+  background-color: transparent;
+
+  appearance: none;
+
+  position: relative;
+
+  &:checked::after {
+    content: "";
+    position: absolute;
+
+    left: 8px;
+    top: 8px;
+
+    width: 12px;
+    height: 12px;
+
+    border-radius: 50%;
+    background-color: $basic-green;
+  }
+}

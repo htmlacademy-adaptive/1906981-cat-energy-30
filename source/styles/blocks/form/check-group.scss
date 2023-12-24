@@ -1,0 +1,13 @@
+.check-group {
+  padding: 0 0 28px;
+}
+
+.check-group .main-form__legend {
+  padding-top: 9px;
+
+  margin-bottom: 29px;
+}
+
+.check-group__item:not(:last-child) {
+  margin-bottom: 1px;
+}

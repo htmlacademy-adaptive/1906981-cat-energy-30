@@ -1,0 +1,46 @@
+.input-email {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.input-email__label {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.input-email__input {
+  padding: 13px 40px 12px 14px;
+
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: $special-dark-grey;
+
+  background-image: url("../../images/icons/stack.svg#input-email");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right 12px center;
+
+  border: 1px solid #e7e7e7;
+
+  flex-grow: 1;
+
+  &:focus-visible {
+    outline: none;
+
+    border-color: $special-dark-grey;
+
+    box-shadow: 0 0 0 1px $special-dark-grey;
+  }
+
+  &--error {
+    border-color: $status-error;
+
+    box-shadow: 0 0 0 1px $status-error;
+  }
+}

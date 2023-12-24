@@ -1,0 +1,44 @@
+.main-form__title {
+  margin: 27px 0 34px;
+}
+
+.main-form__description {
+  text-transform: uppercase;
+
+  margin: 0 0 20px;
+}
+
+.main-form__group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.main-form__legend {
+  font-size: 24px;
+  line-height: 26px;
+
+  padding: 0;
+}
+
+.main-form__list {
+  @include list-style;
+}
+
+.main-form__submit {
+  padding: 10px 44px;
+
+  width: 100%;
+
+  margin-bottom: 21px;
+}
+
+.main-form__required-text {
+  display: block;
+
+  font-family: $secondary-font;
+  text-align: center;
+  line-height: 16px;
+
+  margin-bottom: 32px;
+}

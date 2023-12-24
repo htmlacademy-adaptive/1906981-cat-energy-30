@@ -1,0 +1,27 @@
+.textarea {
+  padding: 14px;
+
+  box-sizing: border-box;
+
+  width: 100%;
+  height: 150px;
+
+  color: $special_dark-grey;
+
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  resize: none;
+
+  border: 1px solid #e7e7e7;
+
+  &:focus-visible {
+    outline: none;
+
+    border-color: $special-dark-grey;
+
+    box-shadow: 0 0 0 1px $special-dark-grey;
+  }
+}
