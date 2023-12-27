@@ -1,7 +1,7 @@
 .case {
   background-color: #eaeaea;
 
-  padding: 25px 20px 40px;
+  padding: 25px 0 40px;
 }
 
 .case__title {
@@ -19,7 +19,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 
-  margin-bottom: 34px;
+  margin-bottom: 19px;
 }
 
 .case__item {
@@ -27,12 +27,9 @@
   flex-direction: column-reverse;
   justify-content: center;
 
-  padding: 14px 20px 17px;
-
-  border: 1px solid $special-grey;
-  border-radius: 3px;
-
   position: relative;
+
+  word-break: break-word;
 }
 
 .case__text {
@@ -45,12 +42,10 @@
 
   background-color: #eaeaea;
 
-  max-width: 65px;
+  margin: -9px auto 0;
+  padding: 0 12px;
 
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 65px;
 }
 
 .case__number {
@@ -60,6 +55,10 @@
   text-transform: uppercase;
 
   margin: 0;
+  padding: 14px 20px 17px;
+
+  border: 1px solid $special-grey;
+  border-radius: 3px;
 }
 
 .case__price {

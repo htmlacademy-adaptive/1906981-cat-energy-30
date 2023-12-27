@@ -1,5 +1,7 @@
 /* в этот файл добавляет скрипты*/
 
+
+/* SLIDER */
 const compareSliderToggle = document.querySelector(".compare-slider__toggle");
 const compareSlider = document.querySelector(".compare-slider");
 
@@ -13,4 +15,14 @@ compareSliderToggle.addEventListener('click', ()=> {
 
     compareSlider.classList.add("compare-slider--after");
   }
+})
+
+
+/* HEADER-MENU */
+const mainNavToggle = document.querySelector(".main-nav__toggle");
+const mainNavList = document.querySelector(".main-nav__list");
+
+mainNavToggle.addEventListener('click', ()=> {
+  mainNavList.classList.toggle("main-nav__list--opened");
+  mainNavToggle.classList.toggle("main-nav__toggle--opened");
 })

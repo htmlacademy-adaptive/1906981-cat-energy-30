@@ -4,6 +4,23 @@
   text-align: center;
 
   position: relative;
+}
+
+.hero__container {
+  padding: 28px 0 164px;
+  margin-bottom: 138px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  background-image: url("../../images/index-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  background-color: #62a53b;
+
+  min-height: 275px;
 
   &::after {
     content: "";
@@ -14,23 +31,11 @@
     background-size: 100%;
 
     left: calc(50% - 140px);
-    bottom: 63px;
+    top: calc(100% - 135px);
 
     width: 280px;
     height: 270px;
   }
-}
-
-.hero__container {
-  padding: 28px 0 0;
-  margin-bottom: 138px;
-
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-phone@2x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
-  min-height: 275px;
 }
 
 .hero__title {
@@ -55,8 +60,8 @@
 }
 
 .hero__button {
-  width: calc(100% - 40px);
+  width: calc(100% - 80px);
 
-  padding: 10px 0;
+  padding: 10px 20px;
   margin-bottom: 20px;
 }
