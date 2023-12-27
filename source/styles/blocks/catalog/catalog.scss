@@ -1,0 +1,18 @@
+.catalog__list {
+  @include list-style;
+
+  border-top: 1px solid #bebebe;
+
+  margin: 0 auto;
+}
+
+.catalog__item {
+  padding: 20px 20px 25px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.catalog__button {
+  grid-column: span 2;
+}
