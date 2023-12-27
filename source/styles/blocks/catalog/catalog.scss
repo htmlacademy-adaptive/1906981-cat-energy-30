@@ -1,18 +1,40 @@
 .catalog__list {
   @include list-style;
 
-  border-top: 1px solid #bebebe;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 
   margin: 0 auto;
 }
 
 .catalog__item {
-  padding: 20px 20px 25px;
+  padding: 20px 20px 24px;
 
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  border-bottom: 1px solid #ebebeb;
+
+  box-sizing: border-box;
+
+  max-height: 209px;
+}
+
+.catalog__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+
+  color: #222222;
+
+  max-width: 76px;
+
+  margin: 2px 0 14px;
 }
 
 .catalog__button {
   grid-column: span 2;
+
+  margin-top: 15px;
 }

@@ -21,6 +21,11 @@
   }
 }
 
+.crossed-title__wrapper {
+  max-width: 187px;
+  display: block;
+}
+
 .crossed-title__text {
   position: relative;
   display: inline-block;
@@ -30,7 +35,3 @@
   padding-right: 20px;
 }
 
-.crossed-title__wrapper {
-  max-width: 187px;
-  display: block;
-}
