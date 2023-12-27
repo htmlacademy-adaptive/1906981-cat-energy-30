@@ -1,0 +1,54 @@
+.extra__title {
+  line-height: 24px;
+
+  margin-bottom: 33px;
+}
+
+.extra__title .crossed-title__wrapper {
+  max-width: 250px;
+}
+
+.extra__list {
+  @include list-style;
+
+  border-top: 1px solid $special-grey;
+
+  margin-bottom: 35px;
+}
+
+.extra__item {
+  padding: 13px 0 18px;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid $special-grey;
+}
+
+.extra__item-title {
+  margin: 0 0 13px;
+
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  color: #222222;
+}
+
+.extra__text {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 15px;
+}
+
+.extra__description {
+  line-height: 14px;
+}
+
+.extra__price {
+  line-height: 14px;
+}
+
+.extra__button {
+  width: 100%;
+}
