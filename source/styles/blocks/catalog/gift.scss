@@ -10,10 +10,8 @@
   box-sizing: border-box;
 
   padding: 186px 61px 43px 58px;
-}
 
-@media (min-resolution: 2dppx) {
-  .gift {
+  @media (min-resolution: 2dppx) {
     background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-mobile@2x.jpg");
   }
 }
