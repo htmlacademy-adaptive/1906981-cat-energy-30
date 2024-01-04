@@ -1,9 +1,10 @@
 .main-header {
   display: flex;
+  justify-content: end;
 
   position: relative;
 
-  padding: 32px 0;
+  padding: 64px 0 0;
 
   background-image: url("../../images/logo-text.svg");
   background-repeat: no-repeat;
@@ -24,6 +25,16 @@
 
     background-color: #d9d9d9;
   }
+
+  @media (min-width: $tablet) {
+    padding: 37px 0 3px 267px;
+
+    background-image: none;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .main-header__logo {
@@ -32,5 +43,9 @@
   position: absolute;
   left: 0;
   top: 13px;
+
+  @media (min-width: $tablet) {
+    top: 25px;
+  }
 }
 

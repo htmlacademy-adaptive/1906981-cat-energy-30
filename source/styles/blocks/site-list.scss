@@ -8,7 +8,30 @@
 
   padding-top: 2px;
 
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 34px;
+  }
+}
+
+.site-list__item:first-child .site-list__link::before {
+  content: "";
+  position: absolute;
+
   width: calc(100% + 40px);
+  height: 1px;
+  background-color: #e6e6e6;
+
+  top: 0;
+  left: -20px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -16,8 +39,31 @@
 
   text-decoration: none;
 
+  position: relative;
   display: block;
-  padding: 22px 20px 23px;
+  padding: 22px 20px 24px;
 
-  border-bottom: 1px solid #d9d9d9;
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #e6e6e6;
+
+    bottom: 0;
+    left: -20px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0 0 8px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--current {
+    border-bottom: 2px solid $basic-green;
+  }
 }
