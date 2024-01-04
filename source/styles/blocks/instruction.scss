@@ -1,11 +1,43 @@
+.instruction {
+  @media (min-width: $tablet) {
+    padding-bottom: 47px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      height: 1px;
+      width: calc(100% + 60px);
+
+      background-color: #e6e6e6;
+
+      bottom: 53px;
+      left: -30px;
+    }
+  }
+}
+
 .instruction__title {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+  }
 }
 
 .instruction__list {
   @include list-style;
 
   margin-bottom: 53px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 37px 59px;
+  }
 }
 
 .instruction__item {
@@ -18,6 +50,8 @@
   align-items: center;
 
   min-height: 54px;
+
+  counter-increment: instruction;
 
   &:not(:last-child) {
     margin-bottom: 24px;
@@ -36,6 +70,44 @@
     background-color: $basic-green;
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  @media (min-width: $tablet) {
+    display: block;
+
+    padding: 151px 60px 57px 0;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+
+      top: 40px;
+    }
+
+    &::after {
+      content: counter(instruction);
+      position: absolute;
+
+      top: 0;
+      right: 73px;
+
+      text-align: left;
+
+      min-width: 140px;
+
+      font-size: 280px;
+      line-height: 280px;
+
+      color: $basic-grey;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: unset;
+    }
+
+    &--leaf::after {
+      right: 66px;
+    }
   }
 
   &--leaf::before {
@@ -61,4 +133,9 @@
 
 .instruction__description {
   margin: 0;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    z-index: 3;
+  }
 }

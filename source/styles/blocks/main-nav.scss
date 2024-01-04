@@ -48,6 +48,8 @@
   @media (min-width: $tablet) {
     display: block;
     position: static;
+
+    width: unset;
   }
 
   &--opened {
