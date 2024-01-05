@@ -102,49 +102,51 @@
 
     <section class="case">
       <div class="container">
-        <h2 class="case__title section-title">Живой пример</h2>
+        <div class="case__wrapper">
+          <h2 class="case__title section-title">Живой пример</h2>
 
-        <p class="case__description regular-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <p class="case__description regular-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
 
-        <div class="case__inner">
-          <dl class="case__list">
-            <div class="case__item">
-              <dt class="case__text">снижение веса</dt>
-              <dd class="case__number">5 кг</dd>
+          <div class="case__inner">
+            <dl class="case__list">
+              <div class="case__item">
+                <dt class="case__text">снижение веса</dt>
+                <dd class="case__number">5 кг</dd>
+              </div>
+
+              <div class="case__item">
+                <dt class="case__text">затрачено времени</dt>
+                <dd class="case__number">60 дней</dd>
+              </div>
+            </dl>
+
+            <p class="case__price">Затраты на питание: <span class="case__price-amount">15&nbsp;000 руб.</span></p>
+          </div>
+
+          <div class="case__slider">
+            <div class="compare-slider">
+              <ul class="compare-slider__list">
+                <li class="compare-slider__screen compare-slider__screen--before">
+                  <picture>
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
+                    <img class="compare-slider__image compare-slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до похудения.">
+                  </picture>
+                </li>
+
+                <li class="compare-slider__screen compare-slider__screen--after">
+                  <picture>
+                    <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x">
+                    <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+                    <img class="compare-slider__image compare-slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Нормальный кот после похудения.">
+                  </picture>
+                </li>
+              </ul>
+
+              <button class="compare-slider__toggle" type="button">
+                <span class="visually-hidden">Поменять изображение.</span>
+              </button>
             </div>
-
-            <div class="case__item">
-              <dt class="case__text">затрачено времени</dt>
-              <dd class="case__number">60 дней</dd>
-            </div>
-          </dl>
-
-          <p class="case__price">Затраты на питание: <span class="case__price-amount">15&nbsp;000 руб.</span></p>
-        </div>
-
-        <div class="case__slider">
-          <div class="compare-slider">
-            <ul class="compare-slider__list">
-              <li class="compare-slider__screen compare-slider__screen--before">
-                <picture>
-                  <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560" height="512">
-                  <img class="compare-slider__image compare-slider__image--before" src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот до похудения.">
-                </picture>
-              </li>
-
-              <li class="compare-slider__screen compare-slider__screen--after">
-                <picture>
-                  <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x">
-                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
-                  <img class="compare-slider__image compare-slider__image--after" src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Нормальный кот после похудения.">
-                </picture>
-              </li>
-            </ul>
-
-            <button class="compare-slider__toggle" type="button">
-              <span class="visually-hidden">Поменять изображение.</span>
-            </button>
           </div>
         </div>
       </div>
