@@ -6,4 +6,10 @@
   line-height: 20px;
 
   margin: 0;
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
 }

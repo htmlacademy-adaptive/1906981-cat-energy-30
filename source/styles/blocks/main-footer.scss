@@ -5,6 +5,10 @@
   justify-content: space-between;
   gap: 15px;
 
+  @media (min-width: $tablet) {
+    padding: 62px 70px 61px;
+  }
+
   &--grey {
     background-color: $basic-grey;
   }
@@ -17,10 +21,23 @@
   text-transform: uppercase;
 
   margin: 0;
+
+  max-width: 180px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .main-footer__address {
   max-width: 140px;
+
+  @media (min-width: $tablet) {
+    text-align: right;
+
+    max-width: 180px;
+  }
 }
 
 .main-footer__info {
@@ -33,10 +50,23 @@
 
   padding: 40px 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: unset;
+
+    padding: 56px 30px;
+  }
 }
 
 .main-footer__logo {
   margin: auto;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+  }
 }
 
 .main-footer__list {
@@ -44,4 +74,11 @@
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin-left: 39px;
+
+    border: none;
+  }
 }
