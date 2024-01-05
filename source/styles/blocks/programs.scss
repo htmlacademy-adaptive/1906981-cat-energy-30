@@ -45,6 +45,10 @@
 
   @media (min-width: $tablet) {
     padding: 77px 316px 57px 52px;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    max-width: 850px;
 
     &::before {
       width: 200px;
@@ -137,6 +141,8 @@
   @media (min-width: $tablet) {
     margin: 0 0 52px 0;
     padding-bottom: unset;
+
+    max-width: 500px;
 
     &::after {
       display: none;

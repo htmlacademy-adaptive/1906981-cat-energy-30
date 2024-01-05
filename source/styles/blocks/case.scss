@@ -2,14 +2,46 @@
   background-color: #eaeaea;
 
   padding: 25px 0 40px;
+
+  @media (min-width: $tablet) {
+    background-color: unset;
+    background-image: linear-gradient(transparent calc(100% - 462px), #eaeaea calc(100% - 462px), #eaeaea 100%);
+
+    padding: 45px 0 101px;
+  }
+}
+
+.case .container {
+  max-width: 850px;
+  box-sizing: border-box;
+
+  margin: 0 auto;
 }
 
 .case__title {
-  margin-bottom: 40px;
+  margin: 0 0 40px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 60px;
+  }
 }
 
 .case__description {
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 55px;
+  }
+}
+
+.case__inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+    margin: 0 0 98px;
+  }
 }
 
 .case__list {
@@ -19,7 +51,17 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
 
-  margin-bottom: 19px;
+  margin: 0 0 19px;
+
+  @media (min-width: $tablet) {
+    gap: 43px;
+
+    max-width: 400px;
+
+    align-items: start;
+
+    margin: 0;
+  }
 }
 
 .case__item {
@@ -46,6 +88,15 @@
   padding: 0 12px;
 
   max-width: 65px;
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $basic-white;
+
+    max-width: 125px;
+  }
 }
 
 .case__number {
@@ -59,6 +110,13 @@
 
   border: 1px solid $special-grey;
   border-radius: 3px;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 37px;
+
+    padding: 15px 29px 20px;
+  }
 }
 
 .case__price {
@@ -68,9 +126,29 @@
   letter-spacing: 0.2px;
 
   margin: 0 0 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    text-align: right;
+
+    margin: 11px 0 0;
+
+    max-width: 178px;
+  }
+}
+
+.case__price-amount {
+  @media (min-width: $tablet) {
+    display: block;
+    margin: 10px 0 0;
+  }
 }
 
 .case__slider {
   width: 280px;
   margin: 0 auto 0;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+  }
 }

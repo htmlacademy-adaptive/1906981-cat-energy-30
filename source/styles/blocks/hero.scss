@@ -6,9 +6,21 @@
   position: relative;
 
   @media (min-width: $tablet) {
-    min-height: 874px;
+    min-height: 810px;
 
     text-align: left;
+  }
+}
+
+.hero__wrapper {
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding: 64px 120px 0;
+    box-sizing: border-box;
+
+    max-width: 1090px;
+
+    position: relative;
 
     &::after {
       content: "";
@@ -59,8 +71,8 @@
   }
 
   @media (min-width: $tablet) {
-    padding: 64px 120px 0;
     margin: 0 0 50px 0;
+    padding: 0;
 
     background: none;
 
@@ -127,7 +139,7 @@
     max-width: 244px;
 
     padding: 14px 28px;
-    margin: 0 0 526px 120px;
+    margin: 0 0 526px 0;
 
     position: relative;
     z-index: 3;
