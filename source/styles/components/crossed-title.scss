@@ -1,0 +1,61 @@
+.crossed-title {
+  position: relative;
+
+  margin: 0;
+
+  background-color: $basic-white;
+
+  z-index: 5;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: calc(100% + 20px);
+    height: 2px;
+
+    background-color: $basic-green;
+
+    top: 15px;
+    left: 0;
+
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet) {
+    &::before {
+      width: calc(100% + 60px);
+
+      top: 22px;
+      left: -30px;
+    }
+  }
+}
+
+.crossed-title__wrapper {
+  max-width: 187px;
+  display: block;
+
+  @media (min-width: $tablet) {
+    max-width: unset;
+  }
+}
+
+.crossed-title__text {
+  position: relative;
+  display: inline-block;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+
+  background-color: $basic-white;
+
+  padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+

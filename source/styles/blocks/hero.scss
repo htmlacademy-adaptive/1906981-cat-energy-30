@@ -5,6 +5,56 @@
 
   position: relative;
 
+  @media (min-width: $tablet) {
+    min-height: 810px;
+
+    text-align: left;
+  }
+}
+
+.hero__wrapper {
+  @media (min-width: $tablet) {
+    margin: 0 auto;
+    padding: 64px 120px 0;
+    box-sizing: border-box;
+
+    max-width: 1090px;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      background-image: url("../../images/index-can-tablet@2x.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      left: 30px;
+      bottom: 0;
+
+      width: 709px;
+      height: 609px;
+    }
+  }
+}
+
+.hero__container {
+  padding: 28px 0 164px;
+  margin-bottom: 138px;
+
+  box-sizing: border-box;
+
+  position: relative;
+
+  background-image: url("../../images/index-background-mobile@2x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  background-color: #62a53b;
+
+  min-height: 275px;
+
   &::after {
     content: "";
     position: absolute;
@@ -14,23 +64,26 @@
     background-size: 100%;
 
     left: calc(50% - 140px);
-    bottom: 63px;
+    top: calc(100% - 135px);
 
     width: 280px;
     height: 270px;
   }
-}
 
-.hero__container {
-  padding: 28px 0 0;
-  margin-bottom: 138px;
+  @media (min-width: $tablet) {
+    margin: 0 0 50px 0;
+    padding: 0;
 
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-phone@2x.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+    background: none;
 
-  min-height: 275px;
+    min-height: unset;
+
+    z-index: 3;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .hero__title {
@@ -41,6 +94,16 @@
   margin: 0 auto 25px;
 
   max-width: 250px;
+
+  @media (min-width: $tablet) {
+    color: $basic-black;
+
+    line-height: 60px;
+
+    margin: 0 0 40px 0;
+
+    max-width: 420px;
+  }
 }
 
 .hero__text {
@@ -52,11 +115,33 @@
   margin: 0 auto;
 
   max-width: 250px;
+
+  @media (min-width: $tablet) {
+    color: $basic-black;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    margin: 0;
+
+    max-width: 300px;
+  }
 }
 
 .hero__button {
-  width: calc(100% - 40px);
+  width: calc(100% - 80px);
 
-  padding: 10px 0;
+  padding: 10px 20px;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    max-width: 244px;
+
+    padding: 14px 28px;
+    margin: 0 0 526px 0;
+
+    position: relative;
+    z-index: 3;
+  }
 }

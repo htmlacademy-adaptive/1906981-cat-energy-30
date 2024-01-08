@@ -1,1 +1,161 @@
+.compare-slider {
+  width: 280px;
+  height: 256px;
 
+  position: relative;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.compare-slider__list {
+  @include list-style;
+
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+.compare-slider__screen {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: #eaeaea;
+
+  overflow: hidden;
+
+  transition: width 1s;
+
+  @media (min-width: $tablet) {
+    background-color: transparent;
+    background-image: linear-gradient($basic-white 150px, #eaeaea 150px, #eaeaea 100%);
+  }
+
+  &--before {
+    z-index: 5;
+
+    width: 50%;
+  }
+
+  &--after {
+    z-index: 1;
+  }
+}
+
+.compare-slider--before .compare-slider__screen--before {
+  width: 100%;
+}
+
+.compare-slider--after .compare-slider__screen--before {
+  width: 0;
+}
+
+.compare-slider__image {
+  width: 280px;
+  height: 256px;
+
+  @media (min-width: $tablet) {
+    width: 560px;
+    height: 512px;
+  }
+}
+
+.compare-slider__toggle {
+  position: absolute;
+
+  padding: 0;
+
+  height: 100%;
+  width: 4px;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+  transition: left 1s;
+
+  border: none;
+
+  background-color: #666666;
+
+  z-index: 7;
+
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    width: 40px;
+    height: 40px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: $basic-white;
+    border: 2px solid #666666;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: 24px;
+    height: 18px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    mask-image: url("../../images/icons/stack.svg#slider-button");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 24px 18px;
+    background-color: #666666;
+  }
+
+  &:hover {
+    background-color: $basic-green;
+
+    &::before {
+      border-color: $basic-green;
+    }
+
+    &::after {
+      background-color: $basic-green;
+    }
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 0.6);
+
+    &::before {
+      border-color: rgba(94, 170, 47, 0.6);
+    }
+
+    &::after {
+      background-color: rgba(94, 170, 47, 0.6);
+    }
+  }
+}
+
+.compare-slider--before .compare-slider__toggle {
+  left: calc(100% - 20px);
+}
+
+.compare-slider--after .compare-slider__toggle {
+  left: 20px;
+}

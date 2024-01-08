@@ -1,0 +1,30 @@
+.gift {
+  min-height: 290px;
+
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-mobile@1x.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 78px 80px, contain;
+  background-position: top 59px center, center;
+
+  box-sizing: border-box;
+
+  padding: 186px 61px 43px 58px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-mobile@2x.jpg");
+  }
+}
+
+.gift__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  color: $basic-white;
+
+  max-width: 161px;
+
+  margin: 0 auto;
+}

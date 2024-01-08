@@ -1,0 +1,24 @@
+.contacts-group__wrapper {
+  padding: 27px 0 12px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    margin: 0 0 65px;
+  }
+}
+
+.contacts-group .main-form__legend {
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 75px;
+  }
+}
+
+.contacts-group__item:not(:last-child) {
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 20px;
+  }
+}

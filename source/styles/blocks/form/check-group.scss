@@ -1,0 +1,29 @@
+.check-group__wrapper {
+  padding: 9px 0 28px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
+}
+
+.check-group .main-form__legend {
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 56px;
+  }
+}
+
+.check-group__list {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 31px 60px;
+
+    margin-bottom: 51px;
+  }
+}
+
+.check-group__item:not(:last-child) {
+  margin-bottom: 1px;
+}
