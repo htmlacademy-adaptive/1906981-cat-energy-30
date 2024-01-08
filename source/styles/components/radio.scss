@@ -3,6 +3,10 @@
   align-items: center;
 
   gap: 15px;
+
+  @media (min-width: $tablet) {
+    gap: 19px;
+  }
 }
 
 .radio__label {
@@ -16,6 +20,13 @@
   min-height: 30px;
 
   cursor: pointer;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 0;
+  }
 }
 
 .radio__input {
@@ -45,5 +56,18 @@
 
     border-radius: 50%;
     background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet) {
+    width: 40px;
+    height: 40px;
+
+    &:checked::after {
+      left: 10px;
+      top: 10px;
+
+      width: 18px;
+      height: 18px;
+    }
   }
 }

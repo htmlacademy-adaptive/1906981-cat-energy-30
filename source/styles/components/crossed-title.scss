@@ -21,11 +21,24 @@
 
     z-index: -1;
   }
+
+  @media (min-width: $tablet) {
+    &::before {
+      width: calc(100% + 60px);
+
+      top: 22px;
+      left: -30px;
+    }
+  }
 }
 
 .crossed-title__wrapper {
   max-width: 187px;
   display: block;
+
+  @media (min-width: $tablet) {
+    max-width: unset;
+  }
 }
 
 .crossed-title__text {
@@ -39,5 +52,10 @@
   background-color: $basic-white;
 
   padding-right: 20px;
+
+  @media (min-width: $tablet) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 

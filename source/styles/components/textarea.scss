@@ -24,4 +24,13 @@
 
     box-shadow: 0 0 0 1px $special-dark-grey;
   }
+
+  @media (min-width: $tablet) {
+    padding: 10px 19px;
+
+    height: 175px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

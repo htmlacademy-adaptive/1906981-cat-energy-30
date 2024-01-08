@@ -9,6 +9,11 @@
 .input-text__label {
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .input-text__input {
@@ -31,6 +36,13 @@
     border-color: $special-dark-grey;
 
     box-shadow: 0 0 0 1px $special-dark-grey;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 11px 12px 10px 17px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   &--error {

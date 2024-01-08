@@ -4,11 +4,20 @@
   display: flex;
   align-items: center;
   gap: 14px;
+
+  @media (min-width: $tablet) {
+    gap: 13px;
+  }
 }
 
 .input-tel__label {
   font-size: 16px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .input-tel__input {
@@ -36,6 +45,15 @@
     border-color: $special-dark-grey;
 
     box-shadow: 0 0 0 1px $special-dark-grey;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 10px 45px 10px 21px;
+
+    font-size: 20px;
+    line-height: 30px;
+
+    background-position: right 13px center;
   }
 
   &--error {

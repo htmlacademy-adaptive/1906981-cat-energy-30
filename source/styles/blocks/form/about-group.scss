@@ -1,6 +1,4 @@
 .about-group {
-  padding: 20px 0 24px;
-
   position: relative;
 
   &::after {
@@ -14,8 +12,26 @@
     bottom: 0;
     left: -20px;
   }
+
+  @media (min-width: $tablet) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.about-group__wrapper {
+  padding: 20px 0 24px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 69px;
+  }
 }
 
 .about-group__item:not(:last-child) {
   margin-bottom: 14px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 19px;
+  }
 }

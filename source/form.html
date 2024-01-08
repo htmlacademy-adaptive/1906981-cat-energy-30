@@ -45,122 +45,136 @@
   </header>
 
   <main class="main main-form container">
-    <h1 class="main-form__title section-title">Подбор программы</h1>
-    <p class="main-form__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
+    <div class="main-form__wrapper">
+      <h1 class="main-form__title section-title">Подбор программы</h1>
+      <p class="main-form__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
 
-    <form class="main-form__form" method="post" action="https://echo.htmlacademy.ru/">
-      <fieldset class="main-form__group about-group">
-        <legend class="visually-hidden">Данные питомца.</legend>
+      <form class="main-form__form" method="post" action="https://echo.htmlacademy.ru/">
+        <fieldset class="main-form__group about-group">
+          <div class="about-group__wrapper">
+            <legend class="visually-hidden">Данные питомца.</legend>
 
-        <ul class="main-form__list about-group__list">
-          <li class="about-group__item input-text">
-            <label class="input-text__label" for="pet-name">Имя:*</label>
-            <input class="input-text__input" type="text" name="pet-name" id="pet-name" value="Барсик" placeholder="Введите имя питомца" required>
-          </li>
+            <ul class="main-form__list about-group__list">
+              <li class="about-group__item input-text">
+                <label class="input-text__label" for="pet-name">Имя:*</label>
+                <input class="input-text__input" type="text" name="pet-name" id="pet-name" value="Барсик" placeholder="Введите имя питомца" required>
+              </li>
 
-          <li class="about-group__item input-text">
-            <label class="input-text__label" for="pet-weight">Вес (кг):*</label>
-            <input class="input-text__input" type="number" min="0" name="pet-weight" id="pet-weight" value="7" placeholder="Введите вес питомца" required>
-          </li>
+              <li class="about-group__item input-text">
+                <label class="input-text__label" for="pet-weight">Вес (кг):*</label>
+                <input class="input-text__input" type="number" min="0" name="pet-weight" id="pet-weight" value="7" placeholder="Введите вес питомца" required>
+              </li>
 
-          <li class="about-group__item input-text">
-            <label class="input-text__label" for="pet-age">Возраст (лет):</label>
-            <input class="input-text__input input" type="number" min="0" name="pet-age" id="pet-age" value="7" placeholder="Введите возраст питомца">
-          </li>
-        </ul>
-      </fieldset>
+              <li class="about-group__item input-text">
+                <label class="input-text__label" for="pet-age">Возраст (лет):</label>
+                <input class="input-text__input input" type="number" min="0" name="pet-age" id="pet-age" value="7" placeholder="Введите возраст питомца">
+              </li>
+            </ul>
+          </div>
+        </fieldset>
 
-      <fieldset class="main-form__group radio-group">
-        <legend class="visually-hidden">Выбор программы питания.</legend>
+        <fieldset class="main-form__group radio-group">
+          <div class="radio-group__wrapper">
+            <legend class="visually-hidden">Выбор программы питания.</legend>
 
-        <ul class="main-form__list radio-group__list">
-          <li class="radio-group__item radio">
-            <input class="radio__input" type="radio" name="program-choose" id="weight-loss" value="weight-loss" checked>
-            <label class="radio__label" for="weight-loss">Похудение</label>
-          </li>
+            <ul class="main-form__list radio-group__list">
+              <li class="radio-group__item radio">
+                <input class="radio__input" type="radio" name="program-choose" id="weight-loss" value="weight-loss" checked>
+                <label class="radio__label" for="weight-loss">Похудение</label>
+              </li>
 
-          <li class="radio-group__item radio">
-            <input class="radio__input" type="radio" name="program-choose" id="weight-gain" value="weight-gain">
-            <label class="radio__label" for="weight-gain">Набор массы</label>
-          </li>
+              <li class="radio-group__item radio">
+                <input class="radio__input" type="radio" name="program-choose" id="weight-gain" value="weight-gain">
+                <label class="radio__label" for="weight-gain">Набор массы</label>
+              </li>
 
-          <li class="radio-group__item radio">
-            <input class="radio__input" type="radio" name="program-choose" id="advice" value="advice">
-            <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
-          </li>
-        </ul>
-      </fieldset>
+              <li class="radio-group__item radio">
+                <input class="radio__input" type="radio" name="program-choose" id="advice" value="advice">
+                <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
 
-      <fieldset class="main-form__group contacts-group">
-        <legend class="visually-hidden">Контактные данные.</legend>
-        <h2 class="main-form__legend crossed-title">
-          <span class="crossed-title__text">
-            <span class="crossed-title__wrapper">Контактные данные (владельца кота)</span>
-          </span>
-        </h2>
+        <fieldset class="main-form__group contacts-group">
+          <div class="contacts-group__wrapper">
+            <legend class="visually-hidden">Контактные данные.</legend>
+            <h2 class="main-form__legend crossed-title">
+              <span class="crossed-title__text">
+                <span class="crossed-title__wrapper">Контактные данные (владельца кота)</span>
+              </span>
+            </h2>
 
-        <ul  class="main-form__list contacts-group__list">
-          <li class="contacts-group__item input-email">
-            <label class="input-email__label" for="e-mail">E-mail:*</label>
-            <input class="input-email__input" type="email" name="e-mail" id="e-mail" value="kuklachev@gmail.com" placeholder="Введите Ваш e-mail" required>
-          </li>
+            <ul  class="main-form__list contacts-group__list">
+              <li class="contacts-group__item input-email">
+                <label class="input-email__label" for="e-mail">E-mail:*</label>
+                <input class="input-email__input" type="email" name="e-mail" id="e-mail" value="kuklachev@gmail.com" placeholder="Введите Ваш e-mail" required>
+              </li>
 
-          <li class="contacts-group__item input-tel">
-            <label class="input-tel__label" for="phone">Телефон:*</label>
-            <input class="input-tel__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" placeholder="Введите Ваш номер телефона" required>
-          </li>
-        </ul>
-      </fieldset>
+              <li class="contacts-group__item input-tel">
+                <label class="input-tel__label" for="phone">Телефон:*</label>
+                <input class="input-tel__input" type="tel" name="phone" id="phone" value="8 (960) 900-60-90" placeholder="Введите Ваш номер телефона" required>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
 
-      <fieldset class="main-form__group textarea-group">
-        <legend class="visually-hidden">Комментарий о питомце.</legend>
-        <h2 class="main-form__legend crossed-title">
-          <span class="crossed-title__text">
-            <span class="crossed-title__wrapper">Комментарий</span>
-          </span>
-        </h2>
+        <fieldset class="main-form__group textarea-group">
+          <div class="textarea-group__wrapper">
+            <legend class="visually-hidden">Комментарий о питомце.</legend>
+            <h2 class="main-form__legend crossed-title">
+              <span class="crossed-title__text">
+                <span class="crossed-title__wrapper">Комментарий</span>
+              </span>
+            </h2>
 
-        <label for="comment">
-          <span class="visually-hidden">Комментарий о питомце.</span>
-          <textarea class="textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-        </label>
-      </fieldset>
+            <label for="comment">
+              <span class="visually-hidden">Комментарий о питомце.</span>
+              <textarea class="textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </label>
+          </div>
+        </fieldset>
 
-      <fieldset class="main-form__group check-group">
-        <legend class="visually-hidden">Дополнительные опции.</legend>
-        <h2 class="main-form__legend crossed-title">
-          <span class="crossed-title__text">
-            <span class="crossed-title__wrapper">Дополнительно</span>
-          </span>
-        </h2>
+        <fieldset class="main-form__group check-group">
+          <div class="check-group__wrapper">
+            <legend class="visually-hidden">Дополнительные опции.</legend>
+            <h2 class="main-form__legend crossed-title">
+              <span class="crossed-title__text">
+                <span class="crossed-title__wrapper">Дополнительно</span>
+              </span>
+            </h2>
 
-        <ul class="main-form__list check-group__list">
-          <li class="check-group__item checkbox">
-            <input class="checkbox__input" type="checkbox" name="add-product" id="sweetener" value="sweetener" checked>
-            <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
-          </li>
+            <ul class="main-form__list check-group__list">
+              <li class="check-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="add-product" id="sweetener" value="sweetener" checked>
+                <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
+              </li>
 
-          <li class="check-group__item checkbox">
-            <input class="checkbox__input" type="checkbox" name="add-product" id="water" value="water">
-            <label class="checkbox__label" for="water">Питьевая вода</label>
-          </li>
+              <li class="check-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="add-product" id="water" value="water">
+                <label class="checkbox__label" for="water">Питьевая вода</label>
+              </li>
 
-          <li class="check-group__item checkbox">
-            <input class="checkbox__input" type="checkbox" name="add-product" id="milk" value="milk">
-            <label class="checkbox__label" for="milk">Молоко</label>
-          </li>
+              <li class="check-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="add-product" id="milk" value="milk">
+                <label class="checkbox__label" for="milk">Молоко</label>
+              </li>
 
-          <li class="check-group__item checkbox">
-            <input class="checkbox__input" type="checkbox" name="add-product" id="vitamins" value="vitamins">
-            <label class="checkbox__label" for="vitamins">Витамины</label>
-          </li>
-        </ul>
-      </fieldset>
+              <li class="check-group__item checkbox">
+                <input class="checkbox__input" type="checkbox" name="add-product" id="vitamins" value="vitamins">
+                <label class="checkbox__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
 
-      <button class="main-form__submit button button--primary" type="submit">Отправить заявку</button>
-      <span class="main-form__required-text">* — Обязательные поля</span>
+        <div class="main-form__submit-wrapper">
+          <button class="main-form__submit button button--primary" type="submit">Отправить заявку</button>
+          <span class="main-form__required-text">* — Обязательные поля</span>
+        </div>
 
-    </form>
+      </form>
+    </div>
   </main>
 
   <footer class="main-footer">
