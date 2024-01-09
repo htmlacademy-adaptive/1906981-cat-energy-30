@@ -67,6 +67,8 @@
   }
 
   &--current {
-    border-bottom: 2px solid $basic-green;
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $basic-green;
+    }
   }
 }
