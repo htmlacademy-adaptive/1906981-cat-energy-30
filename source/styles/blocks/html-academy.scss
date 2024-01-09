@@ -8,6 +8,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: $tablet) {
+    gap: 23px;
+  }
+}
+
+.html-academy__text {
+  max-width: 200px;
 }
 
 .html-academy__link {
@@ -18,8 +26,8 @@
   width: 27px;
   height: 34px;
 
-  /* Поменять background на mask */
-  background-image: url("../../images/icons/stack.svg#logo-html");
+  mask-image: url("../../images/icons/stack.svg#logo-html");
+  background-color: #666666;
   background-repeat: no-repeat;
   background-size: 27px 34px;
 }

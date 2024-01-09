@@ -1,14 +1,40 @@
 .main-header {
   display: flex;
+  justify-content: end;
 
   position: relative;
 
-  padding: 32px 0;
+  padding: 64px 0 0;
 
   background-image: url("../../images/logo-text.svg");
   background-repeat: no-repeat;
   background-size: 101px auto;
   background-position: top 23px center;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    bottom: -1px;
+    left: -20px;
+
+    z-index: 5;
+
+    background-color: #d9d9d9;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 39px 0 3px 267px;
+
+    background-image: none;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .main-header__logo {
@@ -17,5 +43,9 @@
   position: absolute;
   left: 0;
   top: 13px;
+
+  @media (min-width: $tablet) {
+    top: 25px;
+  }
 }
 

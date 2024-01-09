@@ -1,0 +1,17 @@
+.properties {
+  @include list-style;
+}
+
+.properties__item {
+  display: flex;
+  justify-content: space-between;
+
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.properties__value {
+  margin: 0;
+}

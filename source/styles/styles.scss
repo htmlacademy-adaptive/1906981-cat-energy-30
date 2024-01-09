@@ -9,6 +9,13 @@
 @import "./components/button.scss";
 @import "./components/section-title.scss";
 @import "./components/regular-text.scss";
+@import "./components/crossed-title.scss";
+@import "./components/input-text.scss";
+@import "./components/input-tel.scss";
+@import "./components/input-email.scss";
+@import "./components/textarea.scss";
+@import "./components/radio.scss";
+@import "./components/checkbox.scss";
 
 
 /* BLOCKS */
@@ -29,3 +36,19 @@
 @import "./blocks/address.scss";
 @import "./blocks/map.scss";
 @import "./blocks/html-academy.scss";
+
+/* FORM */
+@import "./blocks/form/main-form.scss";
+@import "./blocks/form/about-group.scss";
+@import "./blocks/form/radio-group.scss";
+@import "./blocks/form/contacts-group.scss";
+@import "./blocks/form/textarea-group.scss";
+@import "./blocks/form/check-group.scss";
+
+/* CATALOG */
+@import "./blocks/catalog/main-catalog.scss";
+@import "./blocks/catalog/catalog.scss";
+@import "./blocks/catalog/properties.scss";
+@import "./blocks/catalog/more.scss";
+@import "./blocks/catalog/extra.scss";
+@import "./blocks/catalog/gift.scss";

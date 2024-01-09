@@ -17,16 +17,26 @@
   /* Поменять background на mask */
   background-repeat: no-repeat;
   background-size: 28px 22px;
+  background-color: #666666;
+
+  &:hover {
+    background-color: $basic-green;
+  }
+
+  &:active {
+    background-color: $basic-green;
+    opacity: 0.3;
+  }
 
   &--vk {
-    background-image: url("../../images/icons/stack.svg#social-vk");
+    mask-image: url("../../images/icons/stack.svg#social-vk");
   }
 
   &--telegram {
-    background-image: url("../../images/icons/stack.svg#social-telegram");
+    mask-image: url("../../images/icons/stack.svg#social-telegram");
   }
 
   &--youtube {
-    background-image: url("../../images/icons/stack.svg#social-youtube");
+    mask-image: url("../../images/icons/stack.svg#social-youtube");
   }
 }

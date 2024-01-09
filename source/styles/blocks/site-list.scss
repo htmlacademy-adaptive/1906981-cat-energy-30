@@ -4,9 +4,71 @@
   font-size: 20px;
   line-height: 100%;
   text-transform: uppercase;
+  text-align: center;
+
+  padding-top: 2px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 24px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: 34px;
+
+    padding: 0 4px 0 0;
+  }
+}
+
+.site-list__item:first-child .site-list__link::before {
+  content: "";
+  position: absolute;
+
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: #e6e6e6;
+
+  top: 0;
+  left: -20px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .site-list__link {
   color: $basic-black;
+
   text-decoration: none;
+
+  position: relative;
+  display: block;
+  padding: 22px 20px 24px;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% + 40px);
+    height: 1px;
+    background-color: #e6e6e6;
+
+    bottom: 0;
+    left: -20px;
+  }
+
+  @media (min-width: $tablet) {
+    padding: 0 0 8px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &--current {
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $basic-green;
+    }
+  }
 }
