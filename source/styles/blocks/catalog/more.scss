@@ -1,12 +1,22 @@
 .more {
   padding: 78px 20px 24px;
 
-  background-image: url("../../images/icons/stack.svg#plus");
+  background-image: url("../../images/icons/stack.svg#plus-mobile");
   background-size: 30px;
   background-position: top -63px center;
   background-repeat: no-repeat;
 
   text-align: center;
+
+  @media (min-width: $tablet) {
+    padding: 159px 36px 38px;
+
+    background-image: url("../../images/icons/stack.svg#plus-tablet");
+    background-size: 60px;
+    background-position: top -135px center;
+
+    border: 2px solid $basic-grey;
+  }
 }
 
 .more__title {
@@ -17,6 +27,15 @@
   color: #111111;
 
   margin: 0 0 8px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 24px;
+
+    max-width: 170px;
+
+    margin: 0 auto 22px;
+  }
 }
 
 .more__description {
@@ -27,8 +46,22 @@
   color: $special-dark-grey;
 
   margin: 0 0 21px;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 18px;
+
+    max-width: 170px;
+
+    margin: 0 auto 82px;
+  }
 }
 
 .more__button {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
