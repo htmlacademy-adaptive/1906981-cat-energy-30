@@ -2,10 +2,18 @@
   line-height: 24px;
 
   margin-bottom: 33px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .extra__title .crossed-title__wrapper {
   max-width: 250px;
+
+  @media (min-width: $tablet) {
+    max-width: unset;
+  }
 }
 
 .extra__list {
@@ -13,7 +21,11 @@
 
   border-top: 1px solid $special-grey;
 
-  margin-bottom: 35px;
+  margin: 0 0 35px;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 69px;
+  }
 }
 
 .extra__item {
@@ -22,6 +34,38 @@
   box-sizing: border-box;
 
   border-bottom: 1px solid $special-grey;
+
+  @media (min-width: $tablet) {
+    padding: 25px 38px 29px;
+
+    border-left: 1px solid $special-grey;
+    border-right: 1px solid $special-grey;
+    border-bottom: none;
+
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      height: 1px;
+      width: 100%;
+
+      background-color: $special-grey;
+
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+
+.extra__item-inner {
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 0 12px;
+  }
 }
 
 .extra__item-title {
@@ -33,23 +77,50 @@
   text-transform: uppercase;
 
   color: #222222;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .extra__text {
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 15px;
+  margin: 0 0 15px;
+
+  @media (min-width: $tablet) {
+    margin: 3px 0 0;
+  }
 }
 
 .extra__description {
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    line-height: 20px;
+
+    margin: 0 33px 0 0;
+  }
 }
 
 .extra__price {
   line-height: 14px;
+
+  @media (min-width: $tablet) {
+    line-height: 20px;
+    text-align: right;
+
+    width: 60px;
+  }
 }
 
 .extra__button {
   width: 100%;
+
+  @media (min-width: $tablet) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
