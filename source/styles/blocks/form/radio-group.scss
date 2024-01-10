@@ -25,9 +25,15 @@
 
   @media (min-width: $tablet) {
     padding: 23px 27px 27px;
-    margin: 0 0 67px;
+    margin: 0 40px 64px;
 
     border: 1px solid #e7e7e7;
+  }
+}
+
+.radio-group__list {
+  @media (min-width: $tablet) {
+    margin: unset;
   }
 }
 
