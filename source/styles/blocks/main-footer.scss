@@ -31,6 +31,10 @@
 
   &--grey {
     background-color: $basic-grey;
+
+    @media (min-width: $desktop) {
+      background-color: $basic-white;
+    }
   }
 }
 
