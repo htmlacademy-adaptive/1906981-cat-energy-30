@@ -9,13 +9,29 @@
 
     padding: 45px 0 100px;
   }
+
+  @media (min-width: $desktop) {
+    background-image: linear-gradient(transparent 180px, $basic-grey 180px, $basic-grey 100%);
+
+    padding: 45px 0 74px;
+  }
 }
 
 .case__wrapper {
-  max-width: 850px;
-  box-sizing: border-box;
+  @media (min-width: $tablet) {
+    max-width: 850px;
+    box-sizing: border-box;
 
-  margin: 0 auto;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $max-desktop;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 220px;
+  }
 }
 
 .case__title {
@@ -24,6 +40,10 @@
   @media (min-width: $tablet) {
     margin: 0 0 60px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 146px;
+  }
 }
 
 .case__description {
@@ -31,6 +51,12 @@
 
   @media (min-width: $tablet) {
     margin: 0 0 55px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 68px;
+
+    max-width: 432px;
   }
 }
 
@@ -41,6 +67,12 @@
     align-items: start;
 
     margin: 0 0 98px;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+
+    margin: 0;
   }
 }
 
@@ -61,6 +93,12 @@
     align-items: start;
 
     margin: 0;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 366px;
+
+    margin: 0 0 54px;
   }
 }
 
@@ -97,6 +135,10 @@
 
     max-width: 125px;
   }
+
+  @media (min-width: $desktop) {
+    background-color: $basic-grey;
+  }
 }
 
 .case__number {
@@ -117,6 +159,10 @@
 
     padding: 15px 29px 20px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 15px 26px 20px;
+  }
 }
 
 .case__price {
@@ -135,12 +181,26 @@
 
     max-width: 178px;
   }
+
+  @media (min-width: $desktop) {
+    text-align: left;
+
+    max-width: unset;
+
+    display: flex;
+    column-gap: 62px;
+  }
 }
 
 .case__price-amount {
   @media (min-width: $tablet) {
     display: block;
     margin: 10px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: inline-block;
+    margin: 0;
   }
 }
 

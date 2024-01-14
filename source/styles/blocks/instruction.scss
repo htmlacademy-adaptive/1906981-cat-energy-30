@@ -18,6 +18,14 @@
       left: -30px;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 25px;
+
+    &::after {
+      display: none;
+    }
+  }
 }
 
 .instruction__wrapper {
@@ -26,6 +34,10 @@
     box-sizing: border-box;
 
     margin: 0 auto;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: $max-desktop;
   }
 }
 
@@ -49,6 +61,13 @@
     gap: 37px 59px;
 
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 37px 81px;
   }
 }
 
@@ -121,6 +140,18 @@
 
     &--leaf::after {
       right: 66px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 151px 0 57px 0;
+
+    &::after {
+      right: -10px;
+    }
+
+    &--leaf::after {
+      right: -11px;
     }
   }
 

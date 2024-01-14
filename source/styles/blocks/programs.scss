@@ -1,3 +1,11 @@
+.programs__wrapper {
+  @media (min-width: $desktop) {
+    max-width: $max-desktop;
+
+    margin: 0 auto 71px;
+  }
+}
+
 .programs__list {
   @include list-style;
 
@@ -7,6 +15,13 @@
 
   @media (min-width: $tablet) {
     gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 80px;
   }
 }
 
@@ -64,6 +79,23 @@
     }
   }
 
+  @media (min-width: $desktop) {
+    padding: 77px 61px 59px 51px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+
+      left: 52px;
+      top: 47px;
+      right: unset;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
   &--slim::after {
     background-image: url("../../images/icons/stack.svg#cat-slim");
 
@@ -80,6 +112,15 @@
       left: unset;
       top: 81px;
       right: 93px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 70px;
+      height: 97px;
+
+      left: 67px;
+      top: 41px;
+      right: unset;
     }
   }
 
@@ -100,6 +141,15 @@
       top: 135px;
       right: 29px;
     }
+
+    @media (min-width: $desktop) {
+      width: 134px;
+      height: 56px;
+
+      left: 33px;
+      top: 67px;
+      right: unset;
+    }
   }
 }
 
@@ -116,6 +166,11 @@
     line-height: 36px;
 
     margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 0 163px;
+    margin: 0 0 72px 0;
   }
 }
 
@@ -147,6 +202,10 @@
     &::after {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 28px 0;
   }
 }
 

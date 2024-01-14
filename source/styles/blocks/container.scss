@@ -4,4 +4,9 @@
   @media (min-width: $tablet) {
     margin: 0 30px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 110px;
+    margin: 0;
+  }
 }

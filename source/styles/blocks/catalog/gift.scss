@@ -12,13 +12,13 @@
   padding: 186px 61px 43px 58px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-mobile@2x.jpg");
+    background-image: url("./images/icons/stack.svg#icon-gift"), url("./images/gift-mobile@2x.jpg");
   }
 
   @media (min-width: $tablet) {
     min-height: 200px;
 
-    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-tablet@1x.jpg");
+    background-image: url("/images/icons/stack.svg#icon-gift"), url("/images/gift-tablet@1x.jpg");
     background-size: 80px 82px, contain;
     background-position: top calc(50% - 3px) left calc(50% - 236px), center;
 
@@ -28,7 +28,7 @@
   }
 
   @media (min-width: $tablet) and (min-resolution: 2dppx) {
-    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-tablet@2x.jpg");
+    background-image: url("./images/icons/stack.svg#icon-gift"), url("./images/gift-tablet@2x.jpg");
   }
 }
 

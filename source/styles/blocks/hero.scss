@@ -10,12 +10,38 @@
 
     text-align: left;
   }
+
+  @media (min-width: $desktop) {
+    min-height: 582px;
+
+    background-image: linear-gradient(to right, $basic-white 50%, #65a83e 50%, #65a83e 100%);
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      width: 50%;
+      height: calc(100% + 200px);
+      max-width: 720px;
+      max-height: 694px;
+
+      background-image: url("../../images/index-background-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-size: 100%, calc(100% - 200px);
+      background-position: bottom right;
+
+      bottom: 0;
+      right: 0;
+
+      z-index: 0;
+    }
+  }
 }
 
 .hero__wrapper {
   @media (min-width: $tablet) {
     margin: 0 auto;
-    padding: 64px 120px 0;
+    padding: 66px 120px 0;
     box-sizing: border-box;
 
     max-width: 1090px;
@@ -35,6 +61,26 @@
 
       width: 709px;
       height: 609px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 112px 80px 186px;
+    margin: 0 auto 80px;
+
+    max-width: $max-desktop;
+
+    &::after {
+      background-image: url("../../images/index-can-desktop@2x.png");
+
+      bottom: unset;
+      top: 31px;
+      left: calc(50% - 163px);
+
+      width: 552px;
+      height: 499px;
+
+      z-index: 3;
     }
   }
 }
@@ -84,6 +130,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 51px 0;
+  }
 }
 
 .hero__title {
@@ -103,6 +153,10 @@
     margin: 0 0 40px 0;
 
     max-width: 420px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 41px 0;
   }
 }
 
@@ -126,6 +180,10 @@
 
     max-width: 300px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 340px;
+  }
 }
 
 .hero__button {
@@ -143,5 +201,9 @@
 
     position: relative;
     z-index: 3;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
   }
 }
