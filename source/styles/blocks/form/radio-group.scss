@@ -29,6 +29,10 @@
 
     border: 1px solid #e7e7e7;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .radio-group__list {

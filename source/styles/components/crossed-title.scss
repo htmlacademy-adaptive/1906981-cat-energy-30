@@ -30,6 +30,14 @@
       left: -30px;
     }
   }
+
+  @media (min-width: $desktop) {
+    &::before {
+      width: 100%;
+
+      left: 0;
+    }
+  }
 }
 
 .crossed-title__wrapper {
@@ -43,7 +51,9 @@
 
 .crossed-title__text {
   position: relative;
-  display: inline-block;
+  display: block;
+
+  width: fit-content;
 
   font-weight: 400;
   font-size: 24px;
@@ -58,6 +68,12 @@
     line-height: 36px;
 
     padding: 0 40px 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 calc(50% - 650px);
+
+    max-width: $max-desktop;
   }
 }
 

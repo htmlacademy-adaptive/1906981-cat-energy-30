@@ -1,16 +1,28 @@
 .textarea-group__wrapper {
-  padding: 13px 0 12px;
+  padding: 13px 0 16px;
 
   @media (min-width: $tablet) {
-    padding: 0 0 60px;
+    padding: 0;
+    margin: 0 0 66px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 71px;
   }
 }
 
 .textarea-group__wrapper .textarea {
   @media (min-width: $tablet) {
     width: calc(100% - 80px);
-    
+
     margin: 0 40px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+    max-width: $max-desktop;
+
+    margin: 0 auto;
   }
 }
 
@@ -19,5 +31,9 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 87px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 78px;
   }
 }

@@ -52,51 +52,53 @@
       <p class="main-form__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
 
       <form class="main-form__form" method="post" action="https://echo.htmlacademy.ru/">
-        <fieldset class="main-form__group about-group">
-          <div class="about-group__wrapper">
-            <legend class="visually-hidden">Данные питомца.</legend>
+        <div class="main-form__inner">
+          <fieldset class="main-form__group about-group">
+            <div class="about-group__wrapper">
+              <legend class="visually-hidden">Данные питомца.</legend>
 
-            <ul class="main-form__list about-group__list">
-              <li class="about-group__item input-text">
-                <label class="input-text__label" for="pet-name">Имя:*</label>
-                <input class="input-text__input" type="text" name="pet-name" id="pet-name" value="Барсик" placeholder="Введите имя питомца" required>
-              </li>
+              <ul class="main-form__list about-group__list">
+                <li class="about-group__item input-text">
+                  <label class="input-text__label" for="pet-name">Имя:*</label>
+                  <input class="input-text__input" type="text" name="pet-name" id="pet-name" value="Барсик" placeholder="Введите имя питомца" required>
+                </li>
 
-              <li class="about-group__item input-text">
-                <label class="input-text__label" for="pet-weight">Вес (кг):*</label>
-                <input class="input-text__input" type="number" min="0" name="pet-weight" id="pet-weight" value="7" placeholder="Введите вес питомца" required>
-              </li>
+                <li class="about-group__item input-text">
+                  <label class="input-text__label" for="pet-weight">Вес (кг):*</label>
+                  <input class="input-text__input" type="number" min="0" name="pet-weight" id="pet-weight" value="7" placeholder="Введите вес питомца" required>
+                </li>
 
-              <li class="about-group__item input-text">
-                <label class="input-text__label" for="pet-age">Возраст (лет):</label>
-                <input class="input-text__input input" type="number" min="0" name="pet-age" id="pet-age" value="7" placeholder="Введите возраст питомца">
-              </li>
-            </ul>
-          </div>
-        </fieldset>
+                <li class="about-group__item input-text">
+                  <label class="input-text__label" for="pet-age">Возраст (лет):</label>
+                  <input class="input-text__input input" type="number" min="0" name="pet-age" id="pet-age" value="7" placeholder="Введите возраст питомца">
+                </li>
+              </ul>
+            </div>
+          </fieldset>
 
-        <fieldset class="main-form__group radio-group">
-          <div class="radio-group__wrapper">
-            <legend class="visually-hidden">Выбор программы питания.</legend>
+          <fieldset class="main-form__group radio-group">
+            <div class="radio-group__wrapper">
+              <legend class="visually-hidden">Выбор программы питания.</legend>
 
-            <ul class="main-form__list radio-group__list">
-              <li class="radio-group__item radio">
-                <input class="radio__input" type="radio" name="program-choose" id="weight-loss" value="weight-loss" checked>
-                <label class="radio__label" for="weight-loss">Похудение</label>
-              </li>
+              <ul class="main-form__list radio-group__list">
+                <li class="radio-group__item radio">
+                  <input class="radio__input" type="radio" name="program-choose" id="weight-loss" value="weight-loss" checked>
+                  <label class="radio__label" for="weight-loss">Похудение</label>
+                </li>
 
-              <li class="radio-group__item radio">
-                <input class="radio__input" type="radio" name="program-choose" id="weight-gain" value="weight-gain">
-                <label class="radio__label" for="weight-gain">Набор массы</label>
-              </li>
+                <li class="radio-group__item radio">
+                  <input class="radio__input" type="radio" name="program-choose" id="weight-gain" value="weight-gain">
+                  <label class="radio__label" for="weight-gain">Набор массы</label>
+                </li>
 
-              <li class="radio-group__item radio">
-                <input class="radio__input" type="radio" name="program-choose" id="advice" value="advice">
-                <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
+                <li class="radio-group__item radio">
+                  <input class="radio__input" type="radio" name="program-choose" id="advice" value="advice">
+                  <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+        </div>
 
         <fieldset class="main-form__group contacts-group">
           <div class="contacts-group__wrapper">

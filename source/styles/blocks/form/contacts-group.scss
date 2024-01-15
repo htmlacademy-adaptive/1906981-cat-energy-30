@@ -5,6 +5,10 @@
     padding: 0;
     margin: 0 0 65px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 71px;
+  }
 }
 
 .contacts-group .main-form__legend {
@@ -15,10 +19,25 @@
   }
 }
 
+.contacts-group__list {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+
+    margin: 0 auto;
+    max-width: $max-desktop;
+  }
+}
+
 .contacts-group__item:not(:last-child) {
   margin-bottom: 14px;
 
   @media (min-width: $tablet) {
     margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 0;
   }
 }

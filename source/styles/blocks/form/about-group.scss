@@ -26,6 +26,10 @@
   @media (min-width: $tablet) {
     padding: 0 0 72px;
   }
+
+  @media (min-width: $desktop) {
+    padding: 0;
+  }
 }
 
 .about-group__item:not(:last-child) {
