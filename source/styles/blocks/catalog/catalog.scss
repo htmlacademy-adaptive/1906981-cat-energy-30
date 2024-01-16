@@ -4,6 +4,11 @@
   @media (min-width: $tablet) {
     margin: 0 0 70px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 76px;
+    max-width: $max-desktop;
+  }
 }
 
 .catalog__list {
@@ -22,6 +27,13 @@
     gap: 60px;
 
     margin: 0 30px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 63px 80px;
+    margin: 0;
   }
 }
 
@@ -65,6 +77,10 @@
   @media (min-width: $tablet) {
     margin: 0 auto 22px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 12px;
+  }
 }
 
 .catalog__title {
@@ -87,6 +103,10 @@
 
     max-width: 135px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 24px;
+  }
 }
 
 .catalog__button {
@@ -99,6 +119,10 @@
     line-height: 20px;
 
     margin: 33px 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 35px 0 0;
   }
 }
 

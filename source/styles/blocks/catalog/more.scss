@@ -17,6 +17,12 @@
 
     border: 2px solid $basic-grey;
   }
+
+  @media (min-width: $desktop) {
+    padding: 147px 36px 38px;
+
+    background-position: top -136px center;
+  }
 }
 
 .more__title {
@@ -36,6 +42,10 @@
 
     margin: 0 auto 22px;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 25px;
+  }
 }
 
 .more__description {
@@ -54,6 +64,10 @@
     max-width: 170px;
 
     margin: 0 auto 82px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto 91px;
   }
 }
 

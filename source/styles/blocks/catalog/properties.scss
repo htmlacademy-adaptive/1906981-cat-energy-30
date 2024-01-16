@@ -36,6 +36,14 @@
       margin: 0 0 8px;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 8px;
+
+    &:not(:last-child) {
+      margin: 0 0 4px;
+    }
+  }
 }
 
 .properties__value {
