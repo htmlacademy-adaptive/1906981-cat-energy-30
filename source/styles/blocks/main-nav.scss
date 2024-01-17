@@ -20,6 +20,8 @@
   width: 24px;
   height: 24px;
 
+  transition: background-image 0.3s ease-in;
+
   @media (min-width: $tablet) {
     display: none;
   }
