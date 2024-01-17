@@ -18,6 +18,7 @@
   position: relative;
 
   min-height: 30px;
+  max-width: 230px;
 
   cursor: pointer;
 
@@ -26,6 +27,12 @@
     line-height: 30px;
 
     padding: 0;
+
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 430px;
   }
 }
 

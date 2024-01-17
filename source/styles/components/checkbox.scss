@@ -30,6 +30,10 @@
 
     max-width: 215px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 170px;
+  }
 }
 
 .checkbox__input {

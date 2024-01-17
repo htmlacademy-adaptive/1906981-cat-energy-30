@@ -64,6 +64,7 @@
 
     box-sizing: border-box;
     max-width: 850px;
+    min-width: 708px;
 
     &::before {
       width: 200px;
@@ -81,6 +82,8 @@
 
   @media (min-width: $desktop) {
     padding: 77px 61px 59px 51px;
+
+    min-width: 570px;
 
     &::before {
       width: 100px;
