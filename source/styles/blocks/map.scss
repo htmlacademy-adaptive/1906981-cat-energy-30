@@ -1,5 +1,14 @@
 .map {
   position: relative;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    height: 100%;
+  }
 }
 
 .map__image {
@@ -35,6 +44,10 @@
   @media (min-width: $tablet) {
     max-height: 400px;
   }
+
+  @media (min-width: $desktop) {
+    max-height: unset;
+  }
 }
 
 .map__google-link {
@@ -49,5 +62,9 @@
 
   @media (min-width: $tablet) {
     height: 400px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 100%;
   }
 }
