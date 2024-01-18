@@ -34,7 +34,7 @@
   @media (min-width: $desktop) {
     min-width: 245px;
     max-width: 245px;
-    max-height: 288px;
+    height: calc(100% - 200px);
 
     background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-desktop@1x.jpg");
     background-position: top 58px center, center;
