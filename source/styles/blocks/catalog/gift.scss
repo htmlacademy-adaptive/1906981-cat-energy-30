@@ -9,10 +9,42 @@
 
   box-sizing: border-box;
 
-  padding: 186px 61px 43px 58px;
+  padding: 187px 61px 44px 58px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet) {
+    min-height: 200px;
+
+    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-tablet@1x.jpg");
+    background-size: 80px 82px, contain;
+    background-position: top calc(50% - 3px) left calc(50% - 236px), center;
+
+    display: flex;
+    justify-content: center;
+    padding: 71px 125px 32px 320px;
+  }
+
+  @media (min-width: $tablet) and (min-resolution: 2dppx) {
+    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-tablet@2x.jpg");
+  }
+
+  @media (min-width: $desktop) {
+    min-width: 245px;
+    max-width: 245px;
+    height: calc(100% - 200px);
+
+    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-desktop@1x.jpg");
+    background-position: top 58px center, center;
+
+    display: block;
+    padding: 185px 42px 43px;
+  }
+
+  @media (min-width: $desktop) and (min-resolution: 2dppx) {
+    background-image: url("../../../images/icons/stack.svg#icon-gift"), url("../../../images/gift-desktop@2x.jpg");
   }
 }
 
@@ -27,4 +59,16 @@
   max-width: 161px;
 
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    text-align: left;
+
+    margin: 0 0 0 102px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: center;
+
+    margin: 0;
+  }
 }

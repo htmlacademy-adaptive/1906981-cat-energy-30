@@ -1,5 +1,8 @@
 .main-nav {
   width: 100%;
+
+  display: flex;
+  justify-content: end;
 }
 
 .main-nav__toggle {
@@ -16,6 +19,8 @@
 
   width: 24px;
   height: 24px;
+
+  transition: background-image 0.3s ease-in;
 
   @media (min-width: $tablet) {
     display: none;
@@ -51,7 +56,18 @@
 
     width: unset;
 
+    background-color: unset;
+
     padding-right: 4px;
+  }
+
+  @media (min-width: $desktop) {
+    position: relative;
+
+    top: 0;
+    left: 0;
+
+    max-width: 570px;
   }
 
   &--opened {
@@ -65,4 +81,3 @@
 
   top: 0;
 }
-

@@ -1,4 +1,16 @@
 .main-header {
+  padding: 0;
+
+  &--green {
+    @media (min-width: $desktop) {
+      background-image: linear-gradient(to right, $basic-white 50%, #65a83e 50%, #65a83e 100%);
+      background-size: auto;
+      background-position: unset;
+    }
+  }
+}
+
+.main-header__container {
   display: flex;
   justify-content: end;
 
@@ -35,6 +47,13 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    padding: 70px 111px 3px 150px;
+    margin: 0  auto;
+
+    max-width: $max-desktop;
+  }
 }
 
 .main-header__logo {
@@ -44,8 +63,39 @@
   left: 0;
   top: 13px;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: none;
+
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: -2px;
+      left: -5px;
+      right: -5px;
+      bottom: -2px;
+
+      border: 2px solid $basic-black;
+
+      z-index: 10;
+    }
+  }
+
   @media (min-width: $tablet) {
     top: 25px;
+  }
+
+  @media (min-width: $desktop) {
+    left: calc(50% - 610px);
+    top: 54px;
   }
 }
 

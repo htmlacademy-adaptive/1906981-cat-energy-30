@@ -41,6 +41,10 @@
     background-image: linear-gradient($basic-white 150px, #eaeaea 150px, #eaeaea 100%);
   }
 
+  @media (min-width: $desktop) {
+    background-image: linear-gradient($basic-white 135px, $basic-grey 135px, $basic-grey 100%);
+  }
+
   &--before {
     z-index: 5;
 
@@ -149,6 +153,11 @@
     &::after {
       background-color: rgba(94, 170, 47, 0.6);
     }
+  }
+
+  &:focus-visible {
+    outline: 2px solid $basic-black;
+    outline-offset: 20px;
   }
 }
 

@@ -7,6 +7,12 @@
   @media (min-width: $tablet) {
     gap: 20px;
   }
+
+  &--disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
 }
 
 .checkbox__label {
@@ -30,6 +36,10 @@
 
     max-width: 215px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 170px;
+  }
 }
 
 .checkbox__input {
@@ -43,6 +53,7 @@
   background-color: transparent;
 
   appearance: none;
+  cursor: pointer;
 
   position: relative;
 
@@ -57,6 +68,10 @@
     background-repeat: no-repeat;
     background-size: 19px 15px;
     background-position: center;
+  }
+
+  &:hover {
+    border-color: #bababa;
   }
 
   @media (min-width: $tablet) {

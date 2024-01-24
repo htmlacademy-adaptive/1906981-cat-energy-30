@@ -1,3 +1,11 @@
+.programs__wrapper {
+  @media (min-width: $desktop) {
+    max-width: $max-desktop;
+
+    margin: 0 auto 71px;
+  }
+}
+
 .programs__list {
   @include list-style;
 
@@ -7,6 +15,13 @@
 
   @media (min-width: $tablet) {
     gap: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 80px;
   }
 }
 
@@ -49,6 +64,7 @@
 
     box-sizing: border-box;
     max-width: 850px;
+    min-width: 708px;
 
     &::before {
       width: 200px;
@@ -61,6 +77,25 @@
 
     &:last-child {
       margin-bottom: 45px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding: 77px 61px 59px 51px;
+
+    min-width: 570px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+
+      left: 52px;
+      top: 47px;
+      right: unset;
+    }
+
+    &:last-child {
+      margin: 0;
     }
   }
 
@@ -81,6 +116,15 @@
       top: 81px;
       right: 93px;
     }
+
+    @media (min-width: $desktop) {
+      width: 70px;
+      height: 97px;
+
+      left: 67px;
+      top: 41px;
+      right: unset;
+    }
   }
 
   &--pro::after {
@@ -100,6 +144,15 @@
       top: 135px;
       right: 29px;
     }
+
+    @media (min-width: $desktop) {
+      width: 134px;
+      height: 56px;
+
+      left: 33px;
+      top: 67px;
+      right: unset;
+    }
   }
 }
 
@@ -116,6 +169,11 @@
     line-height: 36px;
 
     margin: 0 0 24px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 0 0 0 163px;
+    margin: 0 0 72px 0;
   }
 }
 
@@ -148,6 +206,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 0 28px 0;
+  }
 }
 
 .programs__link {
@@ -167,6 +229,25 @@
   background-position: center right -2px;
   background-size: 34px auto;
 
+  transition: padding-right 0.3s;
+
+  &:hover {
+    padding-right: 49px;
+
+    background-image: url("../../images/icons/stack.svg#icon-arrow-long");
+    background-size: 34px auto;
+    background-position: center right -4px;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $basic-black;
+    outline-offset: 2px;
+  }
+
   @media (min-width: $tablet) {
     font-size: 20px;
     line-height: 30px;
@@ -175,5 +256,11 @@
     padding-right: 56px;
 
     background-size: 32px auto;
+
+    &:hover {
+      padding-right: 61px;
+
+      background-position: center right 1px;
+    }
   }
 }

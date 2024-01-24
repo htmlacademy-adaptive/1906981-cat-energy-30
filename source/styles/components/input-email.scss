@@ -40,6 +40,8 @@
   flex-grow: 1;
 
   &:focus-visible {
+    background-image: url("../../images/icons/stack.svg#input-email-focus");
+
     outline: none;
 
     border-color: $special-dark-grey;
@@ -57,6 +59,8 @@
   }
 
   &--error {
+    background-image: url("../../images/icons/stack.svg#input-email-error");
+
     border-color: $status-error;
 
     box-shadow: 0 0 0 1px $status-error;

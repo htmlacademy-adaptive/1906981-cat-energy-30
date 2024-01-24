@@ -7,17 +7,25 @@
   @media (min-width: $tablet) {
     gap: 19px;
   }
+
+  &--disabled {
+    opacity: 0.3;
+    
+    pointer-events: none;
+  }
 }
 
 .radio__label {
   font-size: 16px;
   text-transform: uppercase;
+  color: #222222;
 
   padding: 9px 0 0 0;
 
   position: relative;
 
   min-height: 30px;
+  max-width: 230px;
 
   cursor: pointer;
 
@@ -26,6 +34,12 @@
     line-height: 30px;
 
     padding: 0;
+
+    max-width: 500px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 430px;
   }
 }
 
@@ -41,6 +55,7 @@
   background-color: transparent;
 
   appearance: none;
+  cursor: pointer;
 
   position: relative;
 
@@ -56,6 +71,10 @@
 
     border-radius: 50%;
     background-color: $basic-green;
+  }
+
+  &:hover {
+    border-color: #bababa;
   }
 
   @media (min-width: $tablet) {

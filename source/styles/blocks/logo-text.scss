@@ -1,4 +1,19 @@
 .logo-text {
   width: 128px;
   height: 24px;
+
+  color: #111111;
+
+  &:hover,
+  &:focus-visible {
+    color: #3E3E3E;
+  }
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &:active {
+    color: #6B6B6B;
+  }
 }
