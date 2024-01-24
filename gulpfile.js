@@ -210,3 +210,11 @@ export function runDev (done) {
     startServer,
   )(done);
 }
+
+export const css = () => {
+  return gulp.src('./src/*.css')
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    .pipe(gulp.dest('./dest'))
+}
