@@ -58,6 +58,7 @@
 .main-form__group {
   margin: 0;
   padding: 0;
+
   border: none;
 }
 
@@ -84,7 +85,6 @@
   @media (min-width: $tablet) {
     display: flex;
     column-gap: 59px;
-
     align-items: center;
   }
 
@@ -99,17 +99,15 @@
 
 .main-form__submit {
   padding: 10px 44px;
+  margin-bottom: 21px;
 
   width: 100%;
 
-  margin-bottom: 21px;
-
   @media (min-width: $tablet) {
     padding: 14px 44px;
+    margin: 0 0 0 40px;
 
     max-width: 284px;
-
-    margin: 0 0 0 40px;
   }
 
   @media (min-width: $desktop) {
