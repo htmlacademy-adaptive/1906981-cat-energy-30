@@ -37,34 +37,34 @@ let isDevelopment = true;
 
 export function processMarkup () {
   return src(`${PATH_TO_SOURCE}**/*.html`)
-  .pipe(nunjucksCompile())
-  .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
-  .pipe(dest(PATH_TO_DIST))
+    .pipe(nunjucksCompile())
+    .pipe(htmlmin({ collapseWhitespace: !isDevelopment }))
+    .pipe(dest(PATH_TO_DIST))
     .pipe(server.stream());
 }
 
 export function lintBem () {
   return src(`${PATH_TO_SOURCE}*.html`)
-  .pipe(bemlinter());
+    .pipe(bemlinter());
 }
 
 export function processStyles () {
   return src(`${PATH_TO_SOURCE}styles/*.scss`, { sourcemaps: isDevelopment })
-  .pipe(plumber())
-  .pipe(sass().on('error', sass.logError))
-  .pipe(postcss([
-    postUrl({ assetsPath: '../' }),
-    autoprefixer(),
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([
+      postUrl({ assetsPath: '../' }),
+      autoprefixer(),
       csso()
     ]))
     .pipe(dest(`${PATH_TO_DIST}styles`, { sourcemaps: isDevelopment }))
     .pipe(server.stream());
-  }
+}
 
-  export function processScripts () {
-    const gulpEsbuild = createGulpEsbuild({ incremental: isDevelopment });
+export function processScripts () {
+  const gulpEsbuild = createGulpEsbuild({ incremental: isDevelopment });
 
-    return src(`${PATH_TO_SOURCE}scripts/*.js`)
+  return src(`${PATH_TO_SOURCE}scripts/*.js`)
     .pipe(gulpEsbuild({
       bundle: true,
       format: 'esm',
@@ -76,14 +76,14 @@ export function processStyles () {
     }))
     .pipe(dest(`${PATH_TO_DIST}scripts`))
     .pipe(server.stream());
-  }
+}
 
-  export function optimizeRaster () {
-    const RAW_DENSITY = 2;
-    const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
+export function optimizeRaster () {
+  const RAW_DENSITY = 2;
+  const TARGET_FORMATS = [undefined, 'webp']; // undefined — initial format: jpg or png
 
-    function createOptionsFormat() {
-      const formats = [];
+  function createOptionsFormat() {
+    const formats = [];
 
     for (const format of TARGET_FORMATS) {
       for (let density = RAW_DENSITY; density > 0; density--) {
@@ -94,45 +94,45 @@ export function processStyles () {
             width: ({ width }) => Math.ceil(width * density / RAW_DENSITY),
             jpegOptions: { progressive: true },
           },
-          );
-        }
+        );
       }
-
-      return { formats };
     }
 
-    return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
+    return { formats };
+  }
+
+  return src(`${PATH_TO_RAW}images/**/*.{png,jpg,jpeg}`)
     .pipe(sharp(createOptionsFormat()))
     .pipe(dest(`${PATH_TO_SOURCE}images`));
-  }
+}
 
-  export function optimizeVector () {
-    return src([`${PATH_TO_RAW}**/*.svg`])
+export function optimizeVector () {
+  return src([`${PATH_TO_RAW}**/*.svg`])
     .pipe(svgo())
     .pipe(dest(PATH_TO_SOURCE));
-  }
+}
 
-  export function createStack () {
-    return src(`${PATH_TO_SOURCE}images/icons/**/*.svg`)
+export function createStack () {
+  return src(`${PATH_TO_SOURCE}images/icons/**/*.svg`)
     .pipe(stacksvg())
     .pipe(dest(`${PATH_TO_DIST}images/icons`));
-  }
+}
 
 export function copyAssets () {
   return src(PATHS_TO_STATIC, { base: PATH_TO_SOURCE })
     .pipe(dest(PATH_TO_DIST));
-  }
+}
 
-  export function startServer () {
-    server.init({
-      server: {
-        baseDir: PATH_TO_DIST
+export function startServer () {
+  server.init({
+    server: {
+      baseDir: PATH_TO_DIST
+    },
+    serveStatic: [
+      {
+        route: '/fonts',
+        dir: `${PATH_TO_SOURCE}fonts`,
       },
-      serveStatic: [
-        {
-          route: '/fonts',
-          dir: `${PATH_TO_SOURCE}fonts`,
-        },
       {
         route: '/*.ico',
         dir: `${PATH_TO_SOURCE}*.ico`,
@@ -217,4 +217,4 @@ export const css = () => {
       autoprefixer(),
     ]))
     .pipe(gulp.dest('./dest'))
-};
+}
