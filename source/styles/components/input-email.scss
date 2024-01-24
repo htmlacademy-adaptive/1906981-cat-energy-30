@@ -39,6 +39,10 @@
 
   flex-grow: 1;
 
+  &:hover {
+    border-color: $special-grey;
+  }
+
   &:focus-visible {
     background-image: url("../../images/icons/stack.svg#input-email-focus");
 

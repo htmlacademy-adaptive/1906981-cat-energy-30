@@ -30,6 +30,10 @@
 
   flex-grow: 1;
 
+  &:hover {
+    border-color: $special-grey;
+  }
+
   &:focus-visible {
     outline: none;
 
