@@ -127,6 +127,8 @@
 
   max-width: 65px;
 
+  z-index: 5;
+
   @media (min-width: $tablet) {
     font-size: 14px;
     line-height: 14px;
