@@ -23,6 +23,11 @@
 .input-email__input {
   padding: 13px 40px 12px 14px;
 
+  height: 45px;
+  width: 140px;
+
+  box-sizing: border-box;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -55,6 +60,8 @@
 
   @media (min-width: $tablet) {
     padding: 10px 45px 10px 20px;
+
+    height: 52px;
 
     font-size: 20px;
     line-height: 30px;

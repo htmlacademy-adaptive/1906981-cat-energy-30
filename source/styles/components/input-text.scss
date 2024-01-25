@@ -19,6 +19,11 @@
 .input-text__input {
   padding: 13px 12px 12px 14px;
 
+  width: 140px;
+  height: 45px;
+
+  box-sizing: border-box;
+
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
@@ -44,6 +49,8 @@
 
   @media (min-width: $tablet) {
     padding: 11px 12px 10px 17px;
+
+    height: 53px;
 
     font-size: 20px;
     line-height: 30px;
