@@ -3,23 +3,6 @@
 
   font-size: 16px;
   line-height: 20px;
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet) {
-    gap: 23px;
-
-    &:hover .html-academy__link {
-      background-color: $basic-green;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
-  }
 }
 
 .html-academy__text {
@@ -29,17 +12,34 @@
 .html-academy__link {
   text-decoration: none;
 
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 
-  width: 27px;
-  height: 34px;
+  width: 100%;
+  min-height: 34px;
 
-  mask-image: url("../../images/icons/stack.svg#logo-html");
-  background-color: #666666;
-  mask-repeat: no-repeat;
-  mask-size: 27px 34px;
+  box-sizing: border-box;
 
+  padding: 0 46px 0 0;
+
+  background-image: url("../../images/logo-html.svg");
+  background-repeat: no-repeat;
+  background-size: 27px 34px;
+  background-position: right center;
+
+  &:hover,
   &:focus-visible {
-    background-color: $basic-green;
+    background-image: url("../../images/logo-html-hover.svg");
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    width: 164px;
   }
 }
